@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Arad Habashi Portfolio",
   description: "Welcome To My Website",
+ 
 };
 
 export default function RootLayout({ children }) {
