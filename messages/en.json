@@ -1,5 +1,17 @@
 {
+  "Seo": {
+      "title": "Arad Habashi Portfolio",
+      "description":"Welcome To My Website"
+    },
     "HomePage": {
       "title": "HomePage"
+    },
+    "MainNav":{
+      "home":"Home",
+      "about":"About",
+      "contact":"Contact",
+      "projects":"Projects",
+      "services":"Services",
+      "resume":"Resume"
     }
   }

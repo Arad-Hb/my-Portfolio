@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    width: 80px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .flag {  
+    width: 35px;  
+    height: 28px;  
+   border-radius: 30%;
+    cursor: pointer;  
+    transition: transform 0.3s, box-shadow 0.3s;  
+}  
+.active {  
+    transform: scale(1.2); 
+    box-shadow: 0 0 10px rgba(135, 215, 224, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s; 
+}  

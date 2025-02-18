@@ -1,5 +1,17 @@
 {
+  "Seo": {
+      "title": "وب سایت آراد حبشی",
+      "description":"به این وب سایت خوش آمدید"
+    },
     "HomePage": {
       "title": "خانه"
+    },
+    "MainNav":{
+      "home":"خانه",
+      "about":"درباره",
+      "contact":"تماس",
+      "projects":"پروژه",
+      "services":"خدمات",
+      "resume":"رزومه"
     }
   }

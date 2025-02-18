@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");  
+ 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../public/images/DevelopementCover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Lato, sans-serif;
+}
+
+.navList {  
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;  
+  align-items: center;  
+  min-height: 100vh;  
+  overflow: hidden;  
+  background: transparent; 
+  
+  
+}  
+
+.navList li {  
+  list-style: none;  
+  text-align: center;  
+}  
+
+.navList li a {  
+  color: white;  
+  text-decoration: none;  
+  font-size: 3em;  
+  padding: 5px 20px;  
+  display: inline-flex;  
+  font-weight: 700;  
+  transition: 0.5s;  
+}  
+
+.navList:hover li a {  
+  color: #0002;  
+}  
+
+.navList li:hover a {  
+  color: #000;  
+  background: transparent;  
+}  
+
+.navList li a:before {  
+  content: "";  
+  position: absolute;  
+  top: 50%;  
+  left: 40%;  
+  transform: translate(-50%, -50%);  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  font-size: 3em;  
+  color: rgba(0, 0, 0, 0.1);  
+  border-radius: 50%;  
+  z-index: -1;  
+  opacity: 0;  
+  font-weight: 900;  
+  text-transform: uppercase;  
+  letter-spacing: 300px;  
+  transition: letter-spacing 0.5s, left 0.5s;  
+}  
+
+.navList li a:hover:before {  
+  content: attr(data-text);  
+  opacity: 1;  
+  left: 50%;  
+  letter-spacing: 10px;  
+  width: 800px;  
+  height: 800px;  
+}  
+
+.navList li:nth-child(6n + 1) a:before {  
+  background: #0470fe;  
+  opacity: .5; 
+}  
+.navList li:nth-child(6n + 2) a:before {  
+  background: #ff7675;  
+  opacity: .5;
+}  
+.navList li:nth-child(6n + 3) a:before {  
+  background: #1582fe;  
+  opacity: .5;
+}  
+.navList li:nth-child(6n + 4) a:before {  
+  background: #1cf147;  
+  opacity: .5;
+}  
+.navList li:nth-child(6n + 5) a:before {  
+  background: #fd79a8; 
+  opacity: .5; 
+}  
+.navList li:nth-child(6n + 6) a:before {  
+  background: #f4f3f0;
+  opacity: .5;  
+}
