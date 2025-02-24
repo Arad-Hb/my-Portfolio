@@ -1,0 +1,52 @@
+ 
+.tableContainer {  
+    position: relative;
+    background-color: #1c1e22;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+    padding: 20px;  
+    width: 400px; 
+    color: white;  
+    border: 2px solid #4c4e52 !important;
+  }  
+  .tableContainer::before{
+    content: "";
+    background: #0c2b35;
+    position: absolute;
+    top: -2px;
+    width: calc(100% - 50px);
+    display: block;
+    height: 2px;
+    left: 25px;
+  }
+  .tableContainer::after{
+    content: "";
+    background: #0c2b35;
+    position: absolute;
+    bottom: -2px;
+    width: calc(100% - 50px);
+    display: block;
+    height: 2px;
+    left: 25px;
+  }
+
+  .tableHeader {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+  }  
+  
+  .tableBody {  
+    list-style-type: none;  
+    padding: 0;  
+    margin: 10px 0 0;  
+  }  
+  
+  .tableBody li {  
+    padding: 8px;  
+    border-bottom: 1px solid #444;  
+  }  
+  
+  .tableBody li:last-child {  
+    border-bottom: none;  
+  }

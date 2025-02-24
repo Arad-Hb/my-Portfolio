@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';  
 import { getLocale, getMessages } from 'next-intl/server';  
 import "./globals.css";
+import Table from "@/components/descriptionBox/Table";
 
 
 const geistSans = Geist({
