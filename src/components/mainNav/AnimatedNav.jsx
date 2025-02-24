@@ -11,7 +11,7 @@ const AnimatedNav = () => {
       return crypto.randomUUID()
     }
     return ( 
-      <div className={styles.container}>
+      <div className={styles.navContainer}>
         <ul className={styles.navList}>  
             <li><Link key={GetID()} target="_blank" href="#Home" data-text={t('home')}>{t('home')}</Link></li>  
             <li><Link key={GetID()} target="_blank" href="#About" data-text={t('about')}>{t('about')}</Link></li>  

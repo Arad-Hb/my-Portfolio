@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; 
       margin: 0;
       padding: 0;
@@ -11,13 +11,17 @@
       height: 100vh;
       background-image: url(../../public/images/DevelopementCover.png);  
       background-size: cover;  
+      background-repeat: no-repeat;
       background-position: center; 
       z-index: 0;
     } 
   .sideBar{
   flex-basis: 30%;
+  z-index: 1;
   }
   .mainNav{
-
     flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
 }

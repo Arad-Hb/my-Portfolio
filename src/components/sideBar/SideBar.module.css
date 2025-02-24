@@ -1,0 +1,40 @@
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    background-color: #0d5ff59d;
+    height: 100vh;
+    width: 200px;
+    
+}
+.cartext{
+    width: 200px;
+    height: 90vh;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background-color: white;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   transition: all .5s;
+}
+
+.personalImage{
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ z-index: 50;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.personalInfo{
+
+}
+.features{
+
+}

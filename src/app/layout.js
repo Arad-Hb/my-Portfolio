@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';  
 import { getLocale, getMessages } from 'next-intl/server';  
 import "./globals.css";
-import LanguageSwitcher from "@/components/buttons/LanguageSwitcher";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +23,7 @@ export default async function RootLayout({ children }) {
     <html lang={locale}>  
       <body>  
         <NextIntlClientProvider messages={messages}>  
-          <LanguageSwitcher/>
+          {/* <LanguageSwitcher/> */}
           {children}  
         </NextIntlClientProvider> 
       </body>  

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");  
  
-.container {
+.navContainer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,10 +8,6 @@
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(../../public/images/DevelopementCover.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   font-family: Lato, sans-serif;
 }
 
@@ -20,16 +16,19 @@
   flex-direction: column; 
   justify-content: center;  
   align-items: center;  
+  width: 80vw;
   min-height: 100vh;  
   overflow: hidden;  
   background: transparent; 
-  
+  backdrop-filter:  grayscale(30%);
   
 }  
 
 .navList li {  
   list-style: none;  
   text-align: center;  
+  margin: 0;
+  -webkit-text-stroke: .5px rgba(255, 255, 255, 0.285);
 }  
 
 .navList li a {  
@@ -62,7 +61,8 @@
   align-items: center;  
   font-size: 3em;  
   color: rgba(0, 0, 0, 0.1);  
-  border-radius: 50%;  
+  border-radius: 50%;
+   
   z-index: -1;  
   opacity: 0;  
   font-weight: 900;  
@@ -78,6 +78,7 @@
   letter-spacing: 10px;  
   width: 800px;  
   height: 800px;  
+
 }  
 
 .navList li:nth-child(6n + 1) a:before {  
@@ -101,6 +102,6 @@
   opacity: .5; 
 }  
 .navList li:nth-child(6n + 6) a:before {  
-  background: #f4f3f0;
+  background: #efe577;
   opacity: .5;  
 }
