@@ -1,0 +1,142 @@
+.container{
+  width: 40vmin;
+  height: 40vmin;
+  position: fixed;
+  bottom:20px;
+  right: 0px;
+  z-index: 1;
+}
+.wrap{
+    position:relative;
+    width:40vmin; height:40vmin;
+    margin:0 auto;
+    background:inherit;
+    transform:scale(0.2) translatez(0px);
+    opacity:0;
+    transition:transform .5s, opacity .5s;
+  }
+  .wrap a{
+    position:absolute;
+    left:0; top:0;
+    width:47.5%; height:47.5%;
+    overflow:hidden;
+    transform:scale(.5) translateZ(0px);
+    background:transparent;
+   
+  }
+  .wrap a div{
+    height:100%;
+    background-size:cover;
+    opacity:.5;
+    transition:opacity .5s;
+    border-radius:inherit;
+  }
+  .wrap a:nth-child(1){
+    border-radius:40vmin 0 0 0;
+    transform-origin: 110% 110%;
+    transition:transform .4s .15s;
+    
+  }
+  .wrap a:nth-child(1) div{
+    background-image: url(../../../public/images/iranFlag.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    transform: rotate(-0.1turn);
+    transition: background-size .5s;
+  }
+  .wrap a:nth-child(1):hover div{
+    transform: rotate(-0.1turn);
+    background-size: 50%;
+    transition: all .5s;
+  }
+  .wrap a:nth-child(2){
+    border-radius:0 40vmin 0 0;
+    left:52.5%;
+    transform-origin: -10% 110%;
+    transition:transform .4s .2s;
+  }
+  .wrap a:nth-child(2) div{
+    background-image: url(../../../public/images/usaFlag2.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    transform: rotate(0.1turn);
+    transition: background-size .5s;
+  }
+  .wrap a:nth-child(2):hover div{
+    transform: rotate(0.1turn);
+    background-size: 50%;
+    transition: all .5s;
+  }
+  .wrap a:nth-child(3){
+    border-radius:0 0 0 40vmin;
+    top:52.5%;
+    transform-origin: 110% -10%;
+    transition:transform .4s .25s;
+  }
+  .wrap a:nth-child(3) div{
+    background-image:url('https://farm7.staticflickr.com/6092/6227418584_d5883b0948.jpg');
+  }
+  .wrap a:nth-child(4){
+    border-radius:0 0 40vmin 0;
+    top:52.5%; left:52.5%;
+    transform-origin: -10% -10%;
+    transition:transform .4s .3s;
+  }
+  .wrap a:nth-child(4) div{
+    background-image: url(../../../public/images/arad.png);
+  }
+  .wrap a:nth-child(5){
+    width:55%;height:55%;
+    left:22.5%; top:22.5%;
+    border-radius:50vmin;
+    box-shadow:0 0 0 .1vmin #acc3c4;
+    transform:scale(1);
+    background: transparent;
+    
+  }
+  .wrap a:nth-child(5) div{
+    /* background-image: url(../../../public/images/arad.png); */
+    
+  }
+  .wraper{
+    position:relative;
+    display:block;
+    margin:0 auto;
+    top:25vmin;
+    width:10vmin; height:10vmin;
+    border-radius:100%;
+    background:#585247;
+    transform:translateZ(0px);
+  }
+  .wraper span{
+    position:absolute;
+    width:60%;height:3px;
+    background:white;
+    left:20%; top:50%;
+    border-radius:0;
+  }
+  .wraper span:after, .wraper span:before{
+    content:'';
+    position:absolute;
+    left:0; top:-1.5vmin;
+    width:100%; height:100%;
+    background:inherit;
+  }
+  .wraper span:after{
+    top:1.5vmin;
+  }
+  .wraper:hover + .wrap, .wrap:hover{
+    transform:scale(.8) translateZ(0px);
+    opacity:1;
+  }
+  .wraper span:hover + .wrap a, .wrap:hover a{
+    transform:scale(1) translatez(0px);
+  }
+  .wrap a:hover div{
+    opacity:1;
+    transform:translatez(0px);
+  }

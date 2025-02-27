@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';  
 import { getLocale, getMessages } from 'next-intl/server';  
 import "./globals.css";
-import Table from "@/components/descriptionBox/Table";
+import RadialMenu from "@/components/radialMenu/RadialMenu";
 
 
 const geistSans = Geist({
@@ -24,7 +24,7 @@ export default async function RootLayout({ children }) {
     <html lang={locale}>  
       <body>  
         <NextIntlClientProvider messages={messages}>  
-          {/* <LanguageSwitcher/> */}
+          <RadialMenu/>
           {children}  
         </NextIntlClientProvider> 
       </body>  

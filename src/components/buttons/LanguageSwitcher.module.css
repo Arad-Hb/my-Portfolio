@@ -1,16 +1,17 @@
 .container {
-    display: flex;
-    width: 80px;
-    height: 40px;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
+  display: flex; /* Use flexbox layout */  
+  justify-content: center; /* Center flags horizontally */  
+  align-items: center; /* Center flags vertically */  
+  width: 100%; /* Full width of the parent */  
+  height: 100%; /* Full height of the parent */  
+  transform: rotate(-30deg); /* Rotate the entire container to the left */  
+  transform-origin: center; /* Set rotation point to the center */  
+  position: relative; 
   }
 
   .flag {  
-    width: 35px;  
-    height: 28px;  
-   border-radius: 30%;
+
+   width: 30%;
     cursor: pointer;  
     transition: transform 0.3s, box-shadow 0.3s;  
 }  

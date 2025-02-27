@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './SideBar.module.css'
 import Image from 'next/image'
-import LanguageSwitcher from '../buttons/LanguageSwitcher'
+
 
 
 const SideBar = () => {
@@ -21,8 +21,8 @@ const SideBar = () => {
   return (
     <div className={`${styles.container}`}>
         <div ref={cartexRef} className={`${styles.cartext}`}>
-            <div className={`${styles.personalImage}`}>
-              <Image ref={cartexImage} className={`${styles.image}`} alt='my picture' key={'aradHb'} width={150} height={180} src={'/images/aradHb-withoutBackground.jpg'}/>
+            <div ref={cartexImage} className={`${styles.personalImage}`}>
+              <Image className={`${styles.image}`} alt='my picture' key={'aradHb'} width={125} height={165} src={'/images/arad.png'}/>
             </div>
             <div className={`${styles.personalInfo}`}>
                 <h4>Arad Habashi</h4>
@@ -30,7 +30,7 @@ const SideBar = () => {
                 <h6>its my website</h6>
             </div>
             <div className={`${styles.features}`}>
-                <LanguageSwitcher/>
+             
             </div>
         </div>
     </div>
